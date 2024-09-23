@@ -6,27 +6,21 @@ using UnityEngine;
 namespace SomethingSpecific.Ext.GameCreator.SOAP {
     [Title("Soap Variable")]
     [Category("Soap/Variable")]
-    [Image(typeof(IconString), ColorTheme.Type.Green)]
-    [Description("Sets the contents of a StringVariable")]
-    [Keywords("String", "SOAP", "StringVariable")]
+    [Image(typeof(IconToggleOff), ColorTheme.Type.Green)]
+    [Description("Sets the contents of a BoolVariable")]
+    [Keywords("Bool", "SOAP", "BoolVariable")]
     [Serializable]
-    public class SetStringVariable : PropertyTypeSetString {
-        private const string DefaultDisplay = "<StringVariable>";
-
-        [SerializeField]
-        private StringVariable stringVariable;
+    public class SetBoolVariable : PropertyTypeSetBool {
+        private const string DefaultDisplay = "<BoolVariable>";
         
+        [SerializeField]
+        private BoolVariable boolVariable;
+        
+        public override string String => boolVariable != null ? boolVariable.name : DefaultDisplay;
 
-        public override string String => stringVariable ? stringVariable.name : DefaultDisplay;
-
-        public override void Set(string value, Args args) {
-            SetStringVariableValue(value);
-        }
-
-        private void SetStringVariableValue(string value) {
-            if (stringVariable) {
-                stringVariable.Value = value;
-            }
+        public override void Set(bool value, Args args) {
+            if (boolVariable == null) return;
+            boolVariable.Value = value;
         }
     }
 }

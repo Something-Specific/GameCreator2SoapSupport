@@ -14,9 +14,6 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
     public class GetIntVariable : PropertyTypeGetDecimal {
         
         [SerializeField]
-        private int defaultValue = 0;
-
-        [SerializeField]
         private IntVariable intVariable;
 
         public override double Get(GameObject target) {
@@ -30,7 +27,7 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
         public override string String => GetIntVariableValue().ToString();
 
         private int GetIntVariableValue() {
-            return intVariable != null ? intVariable.Value : defaultValue;
+            return intVariable != null ? intVariable.Value : 0;
         }
     }
 }

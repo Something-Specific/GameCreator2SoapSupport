@@ -12,7 +12,7 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
     [Keywords("String", "SOAP", "StringVariable")]
     [Serializable]
     public class GetStringVariable : PropertyTypeGetString {
-        private const string DefaultDisplay = "<string variable>";
+        private const string DefaultDisplay = "<StringVariable>";
 
         [SerializeField]
         private StringVariable stringVariable;

@@ -20,6 +20,6 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
                 new SetVector2None()
             );
 
-        public override string String => "(None)";
+        public override string String => "None";
     }
 }
