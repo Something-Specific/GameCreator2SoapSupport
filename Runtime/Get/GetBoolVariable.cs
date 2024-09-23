@@ -27,7 +27,7 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
         public override string String => GetBoolVariableValue().ToString();
 
         private bool GetBoolVariableValue() {
-            return boolVariable && boolVariable.Value;
+            return boolVariable != null && boolVariable.Value;
         }
     }
 }
