@@ -5,12 +5,12 @@ Adds bindings for GameCreator2 to reference built-in SOAP variable types.
 
 ### Supported types
 - `BoolVariable`
+- `ColorVariable`
 - `FloatVariable`
 - `IntVariable`
 - `StringVariable`
 - `Vector2Variable`
 - `Vector3Variable`
-- `ColorVariable`
 
 
 ### Unsupported types
@@ -19,7 +19,8 @@ These require additional types implemented in the GameCreator2SoapSupport projec
 
 - `QuaternionVariable`
 - `GameObjectVariable`
-- `TransformVariable`
+- `ComponentVariable`
+- `Vector2IntVariable`
 
 
 ### Adding a type
