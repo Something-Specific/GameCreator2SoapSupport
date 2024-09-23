@@ -13,9 +13,10 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
 
     [Category("Soap")]
 
-    [Parameter("target", "The target vector to change")]
+    [Parameter("setTarget", "The target vector to change")]
+    [Parameter("fromTarget", "The vector value to assign")]
 
-    [Keywords("Soap")]
+    [Keywords("Soap", "Vector2", "Vector2Variable")]
     [Image(typeof(IconDiskOutline), ColorTheme.Type.Red, typeof(OverlayCross))]
 
     [Serializable]
