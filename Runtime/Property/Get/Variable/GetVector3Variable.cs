@@ -11,10 +11,7 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
     [Description("A SOAP Vector3Variable")]
     [Keywords("Vector3", "SOAP", "Vector3Variable")]
     [Serializable]
-    public class GetVector3Variable : PropertyTypeGetDirection {
-        
-        [SerializeField]
-        private Vector3 defaultValue = Vector3.zero;
+    public class GetVector3Variable : PropertyTypeGetVector3 {
 
         [SerializeField]
         private Vector3Variable vector3Variable;
@@ -30,7 +27,7 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
         public override string String => GetVector3GetValue().ToString();
 
         private Vector3 GetVector3GetValue() {
-            return vector3Variable != null ? vector3Variable.Value : defaultValue;
+            return vector3Variable != null ? vector3Variable.Value : Vector3.zero;
         }
     }
 }
