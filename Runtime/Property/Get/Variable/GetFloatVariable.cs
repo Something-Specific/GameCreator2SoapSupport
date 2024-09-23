@@ -5,16 +5,16 @@ using UnityEngine;
 
 namespace SomethingSpecific.Ext.GameCreator.SOAP {
 
-    [Title("IntVariable")]
-    [Category("Soap/IntVariable")]
+    [Title("FloatVariable")]
+    [Category("Soap/FloatVariable")]
     [Image(typeof(IconNumber), ColorTheme.Type.Green)]
-    [Description("A SOAP IntVariable")]
-    [Keywords("Int", "SOAP", "IntVariable")]
+    [Description("A SOAP FloatVariable")]
+    [Keywords("Float", "SOAP", "FloatVariable")]
     [Serializable]
-    public class GetIntVariable : PropertyTypeGetDecimal {
+    public class GetFloatVariable : PropertyTypeGetDecimal {
         
         [SerializeField]
-        private IntVariable intVariable;
+        private FloatVariable floatVariable;
 
         public override double Get(GameObject target) {
             return GetIntVariableValue();
@@ -26,8 +26,8 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
 
         public override string String => GetIntVariableValue().ToString();
 
-        private int GetIntVariableValue() {
-            return intVariable != null ? intVariable.Value : 0;
+        private float GetIntVariableValue() {
+            return floatVariable != null ? floatVariable.Value : 0;
         }
     }
 }
