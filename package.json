@@ -1,5 +1,11 @@
 {
     "name": "dev.somethingspecific.ext.gamecreator",
     "version": "1.0.0",
-    "displayName": "GameCreator 2 - SOAP Support"
+    "displayName": "GameCreator 2 - SOAP Support",
+    "description": "GameCreator 2 - SOAP Support",
+    "author": {
+        "email": "jared@somethingspecific.dev",
+        "name": "Jared",
+        "url": "https://github.com/Something-Specific/GameCreator2SoapSupport.git"
+    }
 }

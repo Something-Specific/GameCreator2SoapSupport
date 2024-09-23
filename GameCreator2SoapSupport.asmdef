@@ -1,0 +1,17 @@
+{
+    "name": "GameCreator2SoapSupport",
+    "rootNamespace": "SomethingSpecific.Ext.GameCreator.SOAP",
+    "references": [
+        "GUID:ee6baafdecd94804a8714654c4bd097f",
+        "GUID:406c89e0bc84d48f4b079c3c4cd13320"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

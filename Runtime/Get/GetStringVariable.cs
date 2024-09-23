@@ -3,7 +3,8 @@ using GameCreator.Runtime.Common;
 using Obvious.Soap;
 using UnityEngine;
 
-namespace SomethingSpecific.Extension.GameCreatorSupport {
+namespace SomethingSpecific.Ext.GameCreator.SOAP {
+
     [Title("StringVariable")]
     [Category("Soap/StringVariable")]
     [Image(typeof(IconString), ColorTheme.Type.Red)]
