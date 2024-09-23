@@ -4,10 +4,10 @@ using Obvious.Soap;
 using UnityEngine;
 
 namespace SomethingSpecific.Ext.GameCreator.SOAP {
-   
-	[Title("BoolVariable")]
-    [Category("Soap/BoolVariable")]
-    [Image(typeof(IconString), ColorTheme.Type.Red)]
+
+    [Title("Soap Variable")]
+    [Category("Soap/Variable")]
+    [Image(typeof(IconToggleOff), ColorTheme.Type.Green)]
     [Description("A SOAP BoolVariable")]
     [Keywords("Bool", "SOAP", "BoolVariable")]
     [Serializable]

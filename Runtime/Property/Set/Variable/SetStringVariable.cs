@@ -4,9 +4,9 @@ using Obvious.Soap;
 using UnityEngine;
 
 namespace SomethingSpecific.Ext.GameCreator.SOAP {
-    [Title("StringVariable")]
-    [Category("Soap/StringVariable")]
-    [Image(typeof(IconString), ColorTheme.Type.Red)]
+    [Title("Soap Variable")]
+    [Category("Soap/Variable")]
+    [Image(typeof(IconString), ColorTheme.Type.Green)]
     [Description("Sets the contents of a StringVariable")]
     [Keywords("String", "SOAP", "StringVariable")]
     [Serializable]

@@ -4,10 +4,10 @@ using Obvious.Soap;
 using UnityEngine;
 
 namespace SomethingSpecific.Ext.GameCreator.SOAP {
-   
-	[Title("ColorVariable")]
-    [Category("Soap/ColorVariable")]
-    [Image(typeof(IconString), ColorTheme.Type.Red)]
+
+    [Title("Soap Variable")]
+    [Category("Soap/Variable")]
+    [Image(typeof(IconColor), ColorTheme.Type.Green)]
     [Description("A SOAP ColorVariable")]
     [Keywords("Color", "SOAP", "ColorVariable")]
     [Serializable]

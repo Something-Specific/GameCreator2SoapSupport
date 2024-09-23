@@ -4,10 +4,10 @@ using Obvious.Soap;
 using UnityEngine;
 
 namespace SomethingSpecific.Ext.GameCreator.SOAP {
-   
-	[Title("Vector2 Variable")]
-    [Category("Soap/Vector2 Variable")]
-    [Image(typeof(IconString), ColorTheme.Type.Red)]
+
+    [Title("Soap Variable")]
+    [Category("Soap/Variable")]
+    [Image(typeof(IconVector2), ColorTheme.Type.Green)]
     [Description("A SOAP Vector2Variable instance")]
     [Keywords("Vector2", "SOAP", "Vector2Variable")]
     [Serializable]

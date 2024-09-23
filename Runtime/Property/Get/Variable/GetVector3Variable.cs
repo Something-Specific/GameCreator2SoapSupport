@@ -5,9 +5,9 @@ using UnityEngine;
 
 namespace SomethingSpecific.Ext.GameCreator.SOAP {
    
-	[Title("Vector3Variable")]
-    [Category("Soap/Vector3Variable")]
-    [Image(typeof(IconString), ColorTheme.Type.Red)]
+	[Title("Soap Variable")]
+    [Category("Soap/Variable")]
+    [Image(typeof(IconVector3), ColorTheme.Type.Green)]
     [Description("A SOAP Vector3Variable")]
     [Keywords("Vector3", "SOAP", "Vector3Variable")]
     [Serializable]

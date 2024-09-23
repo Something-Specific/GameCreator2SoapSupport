@@ -4,10 +4,10 @@ using Obvious.Soap;
 using UnityEngine;
 
 namespace SomethingSpecific.Ext.GameCreator.SOAP {
-   
-	[Title("IntVariable")]
-    [Category("Soap/IntVariable")]
-    [Image(typeof(IconString), ColorTheme.Type.Red)]
+
+    [Title("Soap Variable")]
+    [Category("Soap/Variable")]
+    [Image(typeof(IconNumber), ColorTheme.Type.Green)]
     [Description("A SOAP IntVariable")]
     [Keywords("Int", "SOAP", "IntVariable")]
     [Serializable]

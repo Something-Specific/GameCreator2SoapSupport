@@ -5,9 +5,9 @@ using UnityEngine;
 
 namespace SomethingSpecific.Ext.GameCreator.SOAP {
 
-    [Title("StringVariable")]
-    [Category("Soap/StringVariable")]
-    [Image(typeof(IconString), ColorTheme.Type.Red)]
+    [Title("Soap Variable")]
+    [Category("Soap/Variable")]
+    [Image(typeof(IconString), ColorTheme.Type.Green)]
     [Description("A SOAP StringVariable")]
     [Keywords("String", "SOAP", "StringVariable")]
     [Serializable]

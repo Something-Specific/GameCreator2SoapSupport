@@ -17,22 +17,24 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
     [Parameter("fromTarget", "The vector value to assign")]
 
     [Keywords("Soap", "Vector2", "Vector2Variable")]
-    [Image(typeof(IconDiskOutline), ColorTheme.Type.Red, typeof(OverlayCross))]
+    [Image(typeof(IconVector2), ColorTheme.Type.Green)]
 
     [Serializable]
     public class InstructionSetVector2 : Instruction {
 
         [SerializeField]
-        private Vector2 setTarget;
+        private PropertySetVector2 setTarget = SetVector2None.Create;
 
         [SerializeField]
-        private PropertyGetVector2 fromTarget = new PropertyGetVector2();
+        private PropertyGetVector2 fromTarget = GetVector2Value.Create;
         
         public override string Title => $"Set {setTarget} to {fromTarget}";
 
 
         protected override Task Run(Args args) {
-            throw new NotImplementedException();
+            setTarget.Set(fromTarget.Get(args), args);
+
+            return DefaultResult;
         }
     }
 }
