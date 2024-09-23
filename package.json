@@ -1,11 +1,5 @@
 {
     "name": "dev.somethingspecific.ext.gamecreator",
     "version": "1.0.0",
-    "displayName": "GameCreator 2 - SOAP Support",
-    "dependencies": {
-        "Obivous.Soap": "0.0.1",
-        "Obvious.Soap.Editor": "0.0.1",
-        "GameCreator.Runtime.Core": "0.0.1",
-        "GameCreator.Editor.Core": "0.0.1"
-    }
+    "displayName": "GameCreator 2 - SOAP Support"
 }
