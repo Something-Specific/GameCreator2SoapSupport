@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace SomethingSpecific.Ext.GameCreator.SOAP {
     [Title("Soap Variable")]
-    [Category("Soap/Variable")]
+    [Category("Soap/IntVariable")]
     [Image(typeof(IconNumber), ColorTheme.Type.Green)]
     [Description("Sets the contents of a IntVariable")]
     [Keywords("Int", "SOAP", "IntVariable")]
