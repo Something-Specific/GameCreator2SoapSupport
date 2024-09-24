@@ -24,7 +24,7 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
             return GetIntVariableValue();
         }
 
-        public override string String => GetIntVariableValue().ToString();
+        public override string String => floatVariable != null ? $"{floatVariable.name}:{floatVariable.Value}" : "<FloatVariable>";
 
         private float GetIntVariableValue() {
             return floatVariable != null ? floatVariable.Value : 0;

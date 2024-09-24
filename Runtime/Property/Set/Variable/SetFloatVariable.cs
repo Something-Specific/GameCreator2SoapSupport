@@ -16,7 +16,8 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
         [SerializeField]
         private FloatVariable floatVariable;
         
-        public override string String => floatVariable != null ? floatVariable.name : DefaultDisplay;
+        public override string String =>
+            floatVariable != null ? $"{floatVariable.name}:{floatVariable.Value}" : DefaultDisplay;
 
         public override void Set(double value, Args args) {
             if (floatVariable == null) return;
