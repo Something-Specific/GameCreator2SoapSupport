@@ -1,6 +1,7 @@
 ﻿using System;
 using GameCreator.Runtime.Common;
 using GameCreator.Runtime.Variables;
+using Obvious.Soap;
 using UnityEngine;
 
 namespace SomethingSpecific.Ext.GameCreator.SOAP {
@@ -14,7 +15,7 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
         // EXPOSED MEMBERS: -----------------------------------------------------------------------
 
         [SerializeField]
-        private Vector2 m_Value = Vector2.zero;
+        private Vector2Reference m_Value = new();
 
         // PROPERTIES: ----------------------------------------------------------------------------
 
@@ -33,11 +34,11 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
         public ValueVector2Variable() : base() { }
 
         public ValueVector2Variable(Vector2 value) : this() {
-            m_Value = value;
+            m_Value.Value = value;
         }
 
         public ValueVector2Variable(Vector3 value) : this() {
-            m_Value = value;
+            m_Value.Value = value;
         }
 
         // OVERRIDE METHODS: ----------------------------------------------------------------------
@@ -47,7 +48,7 @@ namespace SomethingSpecific.Ext.GameCreator.SOAP {
         }
 
         protected override void Set(object value) {
-            m_Value = value is Vector2 cast ? cast : Vector2.zero;
+            m_Value.Value = value is Vector2 cast ? cast : Vector2.zero;
         }
 
         public override string ToString() {
