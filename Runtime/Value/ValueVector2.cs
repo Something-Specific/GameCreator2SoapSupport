@@ -3,7 +3,7 @@ using GameCreator.Runtime.Common;
 using GameCreator.Runtime.Variables;
 using UnityEngine;
 
-namespace SomethingSpecific.Ext.GameCreator.SOAP.Value {
+namespace SomethingSpecific.Ext.GameCreator.SOAP {
     [Image(typeof(IconVector2), ColorTheme.Type.Green)]
     [Title("Vector2")]
     [Category("Values/Vector2")]
